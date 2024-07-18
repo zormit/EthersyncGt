@@ -1,0 +1,1 @@
+## Installation```stMetacello new	repository: 'github://zormit/EthersyncGt:main/src';	baseline: 'EthersyncGt';	load```## Load Lepiter				After installing with Metacello, you will be able to execute```#BaselineOfEthersyncGt asClass loadLepiter```
