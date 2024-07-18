@@ -22,7 +22,9 @@ BaselineOfEthersyncGt class >> loadLepiter [
 { #category : #baseline }
 BaselineOfEthersyncGt >> baseline: spec [
 	<baseline>
-		^ spec for: #common do: [
-			spec package: 'EthersyncGt'
-		]
+	^ spec
+		for: #common
+		do: [ spec
+				package: 'EthersyncGt';
+				package: 'EthersyncPlugin' ]
 ]
