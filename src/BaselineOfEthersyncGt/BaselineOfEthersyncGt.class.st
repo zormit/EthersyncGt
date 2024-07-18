@@ -4,6 +4,11 @@ Class {
 	#category : #BaselineOfEthersyncGt
 }
 
+{ #category : #accessing }
+BaselineOfEthersyncGt class >> gtDependencyAnalysisPreloadedBaselines [
+	^ super gtDependencyAnalysisPreloadedBaselines copyWith: BaselineOfGToolkit
+]
+
 { #category : #loading }
 BaselineOfEthersyncGt class >> loadLepiter [
 	IceRepository registry  
