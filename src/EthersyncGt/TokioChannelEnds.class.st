@@ -18,10 +18,11 @@ TokioChannelEnds class >> fromSource: aFileReference [
 TokioChannelEnds class >> structNode: node owns: senderIdentifier [
 	^ node fields
 		anySatisfy: [ :field | 
-			field value isNil
-				ifTrue: [ field name value = senderIdentifier ]
-				ifFalse: [ field value class = RustPathExpressionNode
-						and: [ (field value names collect: #value) asArray = {senderIdentifier} ] ] ]
+			field value
+				ifNil: [ field name value = senderIdentifier ]
+				ifNotNil: [ :value | 
+					value class = RustPathExpressionNode
+						and: [ (value names collect: #value) asArray = {senderIdentifier} ] ] ]
 ]
 
 { #category : #accessing }
