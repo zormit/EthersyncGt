@@ -24,12 +24,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-07-18T05:05:41.402789+02:00"
+			"dateAndTimeString" : "2024-07-18T05:05:55.984604+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Page 1"
+		"title" : "Ethersync Dummy Daemon"
 	},
 	"uid" : {
 		"__type" : "uuid",
